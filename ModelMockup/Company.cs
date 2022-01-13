@@ -15,10 +15,10 @@ namespace ModelMockup
         public string State { get; set; }
         public string PostalCode { get; set; }
         public string Location { get; set; }
-        public Department Department { get; set; }
+        public List<Department> Departments { get; set; }
         public Guid DepartmentId { get; set; }
-        public List<JobRoles> Jobroles { get; set; }
-        public int MyProperty { get; set; }
+        public JobRole Jobrole { get; set; }
+        public Guid JobRoleId { get; set; }
         public bool IsActive { get; set; }
         public List<Employee> Employees { get; set; }
 
@@ -27,11 +27,15 @@ namespace ModelMockup
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
+        public Company Company { get; set; }
+        public Guid CompanyId { get; set; }
 
     }
-    public class JobRoles
+    public class JobRole
     {
         public Guid Id { get; set; }
+        public string Name { get; set; }
+
     }
 
 }

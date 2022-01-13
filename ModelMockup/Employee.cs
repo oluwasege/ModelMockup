@@ -19,6 +19,7 @@ namespace ModelMockup
         public NextOfKin NextOfKin { get; set; }
         public Guid NextOfKinId { get; set; }
         public List<TimeSheet> TimeSheets { get; set; }
+        public List<Company> Company { get; set; }
     }
     public class BankInformation
     {
